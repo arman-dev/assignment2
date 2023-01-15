@@ -183,6 +183,30 @@ footer {
 }
 
 /* <!---------------------- extra-list section end -------------------> */
+/* Top engineers Section  start */
+.engineers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin: 50px;
+}
+.engineer-details h3{
+        font-weight: 600;
+        font-size: 20px;
+        color: #131313;
+        margin-bottom: 20px;
+}
+.engineer {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.engineer img {
+    height: 106px;
+    width: 106px;
+}
+/* Top engineers Section  end */
 /* <!---------------------- some-facts section start -----------------> */
 .some-facts-info{
     width: 550px;
@@ -205,20 +229,29 @@ footer {
     padding-top: 45px;
     text-align: center;
 }
-
+.icon:hover{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    background-color: #FF900E;
+}
 .icon h2 {
     font-weight: 600;
     font-size: 45px;
     color: #424242;
     margin: 5px;
 }
-
+.icon:hover h2{
+    color: black;
+}
 .icon p {
     font-weight: 600;
     font-size: 20px;
     color: #727272;
 }
-
+.icon:hover p{
+    color: white;
+    text-decoration: underline;
+}
 /* <!---------------------- some-facts section end -------------------> */
 /* <!---------------------- sponsors section start -------------------> */
 .sponsors-info-container{
@@ -237,9 +270,9 @@ footer {
 }
 .sponsors-logo {
     display: flex;
-    justify-content: space-between   
+    justify-content: space-between;
+    filter: grayscale(100%); 
 }
-
 /* <!---------------------- sponsors section end ---------------------> */
 /* <!---------------------- main section end -------------------------> */
 
